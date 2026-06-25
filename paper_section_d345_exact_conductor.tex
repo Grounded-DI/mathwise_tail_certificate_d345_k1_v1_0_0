@@ -1,0 +1,92 @@
+\section{Exact Conductor for the Fixed Case \(D=\{3,4,5\}\), \(k=1\)}
+
+Let
+\[
+B=\{3^a:a\ge 1\}\cup\{4^b:b\ge 1\}\cup\{5^c:c\ge 1\}.
+\]
+Let \(\operatorname{SubSum}(B)\) denote the set of all finite subset sums of distinct
+elements of \(B\).
+
+\begin{theorem}
+For the fixed case \(D=\{3,4,5\}\), \(k=1\), the exact conductor is
+\[
+C(\{3,4,5\},1)=80.
+\]
+Equivalently,
+\[
+[80,\infty)\subseteq \operatorname{SubSum}(B)
+\]
+and
+\[
+79\notin \operatorname{SubSum}(B).
+\]
+\end{theorem}
+
+\begin{proof}
+Let
+\[
+F=B\cap[1,2187)
+=\{3,4,5,9,16,25,27,64,81,125,243,256,625,729,1024\}.
+\]
+Then
+\[
+\sum_{f\in F} f=3236.
+\]
+The finite replay verifier exhaustively enumerates subset sums of \(F\) and confirms
+\[
+[80,3156]\subseteq \operatorname{SubSum}(F),
+\]
+where \(3156=3236-80\). The same endpoint check confirms
+\[
+79\notin \operatorname{SubSum}(B).
+\]
+This obstruction is finite because no basis element greater than \(79\) can occur in a
+representation of \(79\).
+
+It remains to show the infinite tail. Let \(x\in B\) be a basis element with \(x\ge2187\), and set
+\[
+T(x)=\sum_{\substack{b\in B\\ b<x}}b.
+\]
+For each \(q\in\{3,4,5\}\), the sum of \(q\)-powers below \(x\) is at least
+\[
+\frac{x-q}{q-1}.
+\]
+Therefore
+\[
+T(x)\ge
+\frac{x-3}{2}+\frac{x-4}{3}+\frac{x-5}{4}
+=
+\frac{13x-49}{12}.
+\]
+For \(x\ge1957\),
+\[
+\frac{13x-49}{12}\ge x+159.
+\]
+Since every basis element after \(F\) is at least \(2187\), every later basis element
+satisfies
+\[
+T(x)\ge x+159.
+\]
+
+Now suppose a finite prefix \(P\subset B\) has total \(T\) and satisfies
+\[
+[80,T-80]\subseteq \operatorname{SubSum}(P).
+\]
+If \(x\) is the next basis element and \(x\le T-159\), then the translated interval
+\[
+x+[80,T-80]=[x+80,x+T-80]
+\]
+overlaps or touches \([80,T-80]\), because \(x+80\le T-79\). Hence
+\[
+[80,T+x-80]\subseteq \operatorname{SubSum}(P\cup\{x\}).
+\]
+The verified prefix \(F\) gives the base case. The inequality above gives the induction
+step for every later basis element. Thus
+\[
+[80,\infty)\subseteq \operatorname{SubSum}(B).
+\]
+Together with \(79\notin\operatorname{SubSum}(B)\), this proves
+\[
+C(\{3,4,5\},1)=80.
+\]
+\end{proof}

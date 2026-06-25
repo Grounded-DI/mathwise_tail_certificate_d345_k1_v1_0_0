@@ -1,0 +1,2 @@
+# Positive nonrepresentable integers below 80 for B={3^a,4^b,5^c}, a,b,c>=1.
+1 2 6 10 11 15 22 26 63 74 79

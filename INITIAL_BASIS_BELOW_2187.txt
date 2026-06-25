@@ -1,0 +1,4 @@
+# Initial prefix basis B_<2187
+3 4 5 9 16 25 27 64 81 125 243 256 625 729 1024
+sum = 3236
+certified initial interval = [80,3156]
