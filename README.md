@@ -32,3 +32,8 @@ This is a fixed case only: `D={3,4,5}`, `k=1`. It does not claim a general BEGL 
 ## License
 
 The repository includes a license file. Consult it before redistribution.
+
+
+## Curated collection
+
+This exact-conductor certificate is indexed in [MathWise Deterministic Replay Certificates](https://github.com/Grounded-DI/MathWise-Deterministic-Replay-Certificates/tree/main/d345-k1-exact-conductor). This repository remains the canonical source.
