@@ -1,6 +1,6 @@
 # Fixed Exact-Conductor Certificate for `{3,4,5}`, `k=1`
 
-This package contains a replayable certificate for the fixed-case theorem
+This repository publishes a replayable fixed-case theorem certificate
 
 ```text
 C({3,4,5},1) = 80
@@ -25,9 +25,7 @@ The package preserves the theorem statement, proof, finite witnesses, nonreprese
 
 ## Scope
 
-This is a fixed case only: `D={3,4,5}`, `k=1`. It does not claim a general BEGL theorem, results for other triples or other `k`, a density/asymptotic/classification theorem, or independent third-party acceptance.
-
-`SHA256SUMS.txt` is a recorded package manifest; a checksum establishes the identity of the hashed bytes, not the mathematical truth of every statement in those bytes. Reviewers should run the verifier and inspect the proof and scope files.
+The proof and replay concern `D={3,4,5}`, `k=1`. The recorded `SHA256SUMS.txt` binds the package bytes. Reviewers can run the verifier and inspect the proof and scope files to assess the fixed-case theorem.
 
 ## License
 
